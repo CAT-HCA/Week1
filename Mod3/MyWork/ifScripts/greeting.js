@@ -3,7 +3,8 @@
 "use strict";
 
 //User Inputs
-var currentHour = 22;
+var today = new Date();
+var currentHour = today.getHours();
 
 //Calculations
 var greeting;
