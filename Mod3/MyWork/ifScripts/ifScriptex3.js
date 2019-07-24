@@ -2,8 +2,8 @@
 //Author: Corinne Trudeau
 "use strict";
 
-var dollarsSpent = 232.47; //User input
-var taxPercent = .08;
+var dollarsSpent = 29.62; //User input
+var taxPercent = .0635;
 var subtotal;
 var totalDue;
 
