@@ -1,6 +1,6 @@
 "use strict";
-var numUsDolls = 200;
-var currencyType = "krone"
+var numUsDolls = 25;
+var currencyType = "kuna"
 
 if (currencyType=="euro") {
     var exchangeDolls = numUsDolls * .89;

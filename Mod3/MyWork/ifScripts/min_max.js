@@ -38,4 +38,4 @@ else
     answer = c
 }
 //displaying largest
-console.log("The smallest number is " + answer)
+console.log("The largest number is " + answer)

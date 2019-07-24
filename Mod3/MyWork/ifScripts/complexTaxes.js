@@ -4,9 +4,9 @@
 "use strict";
 
 //User Inputs
-var payRate = 10;
-var hoursWorked = 41;
-var filingStatus = "Single";
+var payRate = 60;
+var hoursWorked = 40;
+var filingStatus = "Joint";
 //Calculations
 var taxableIncome;
 var ssTaxRate = .062;
