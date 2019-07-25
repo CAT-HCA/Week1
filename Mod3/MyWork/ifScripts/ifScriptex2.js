@@ -26,4 +26,4 @@ else
 {
     leapYear="false";
 }
-console.log("If the year is " + year + ", it is " + leapYear + " that it is a leap year.")
+console.log("If the year is " + year + ", it " + leapYear + " a leap year.")
