@@ -52,18 +52,20 @@ function getFederalTax(withHolding)
 //Elswhere in Code - defining the varaiable and calling the function
 //user input or determined based on other information
 
-var totalIncome = 750;
-var withHoldingCode = 12;
+var totalIncome = 124000;
+var withHoldingCode = 0;
 //calculation
-var ssTaxOwed = getSocSecTax(totalIncome);
-var fedTaxOwed = getFederalTax(withHoldingCode)*totalIncome;
-var medTaxOwed = getMedicareTax(totalIncome);
-var takeHomePay = totalIncome - (ssTaxOwed+medTaxOwed+fedTaxOwed);
+var ssTaxOwed = (getSocSecTax(totalIncome)).toFixed(2);
+var fedTaxOwed = (getFederalTax(withHoldingCode)*totalIncome).toFixed(2);
+var medTaxOwed = (getMedicareTax(totalIncome)).toFixed(2);
+var takeHomePay = (totalIncome - ssTaxOwed - medTaxOwed - fedTaxOwed).toFixed(2);
+var paycheckTakeHome = (takeHomePay/26).toFixed(2)
 //output
 console.log("Gross Pay: $" + totalIncome);
 console.log("Social Security Tax Withholding: $" + ssTaxOwed);
 console.log("Medicare Tax Withholding: $" + medTaxOwed);
 console.log("Federal Tax Withholding: $" + fedTaxOwed);
 console.log("Take Home Pay: $" + takeHomePay);
+console.log("Your bi-weekly paycheck is $" + paycheckTakeHome)
 
 
