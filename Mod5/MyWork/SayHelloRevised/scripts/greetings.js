@@ -6,5 +6,5 @@ function greetUser()
     alert("Hello " + userName);
 }
 
-btn.onclick = greetUser();
+
 
