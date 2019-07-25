@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <title>Payroll Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="scripts/payroll.js"></script>
+    <script>
+        /*PUT FUNCTION HERE*/
+        var hoursWorkedField, payRateField, withHoldingsField, grossPayField, socialSecurityField, medicareField, federalField, takeHomePay;
+        window.onload = function () {
+            hoursWorkedField = document.getElementById("inputHoursWorked");
+            payRateField = document.getElementById("inputPayRate");
+            withHoldingsField = document.getElementById("inputWithHoldings")
+
+            let calcBtn = document.getElementById("calcBtn");
+            calcBtn.onclick = doPayRollCalc;
+        }
+    </script>
+</head>
+
+<body>
+    <main class="container mx-auto">
+        <h1>Payroll Calculator</h1>
+        <form id="calcForm" action="#" method="GET">
+            <div>
+                <label for="inputHoursWorked">Enter your Hours Worked:</label>
+                <input type="text" id="inputHoursWorked" required>
+            </div>
+            <div>
+                <label for="inputPayRate">Enter your Pay Rate: $</label>
+                <input type="text" id="inputPayRate" required>
+            </div>
+            <div>
+                <label for="inputWithHoldings">Enter your With Holding Code:</label>
+                <input type="text" id="inputWithHoldings" required>
+            </div>
+            <br>
+            <div>
+                <input class="btn btn-info" type="button" id="calcBtn" value="CALCULATE" />
+            </div>
+            <br>
+            <div>
+                <p id="grossPayField"></p>
+                <p id="socialSecurityField"></p>
+                <p id="medicareField"></p>
+                <p id="federalField"></p>
+                <p id="takeHomePay"></p>
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>
