@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <title>Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- link to tempConversions JavaScript file -->
+    <script src="scripts/tempConversion.js"></script>
+    <script>
+        /*PUT FUNCTION HERE*/
+        var celsField, answerField;
+        window.onload = function () {
+            celsField = document.getElementById("inputTemp");
+            answerField = document.getElementById("answer");
+
+            let convertBtn = document.getElementById("convertBtn");
+            convertBtn.onclick = convertCtoF;
+        }
+    </script>
+</head>
+
+<body class="container">
+    <header class="container">
+        <h1 class="text-info text-center">Convert Celsius to Fahrenheit!</h1>
+    </header>
+    <main class="container">
+        <form id="calcForm" action="#" method="GET">
+            <div>
+                <label for="inputTemp">Celsius Temperature:</label>
+                <input type="text" id="inputTemp" required>
+            </div>
+            <br>
+            <div>
+                <input class="btn btn-info"type="button" id="convertBtn" value="CONVERT" />
+            </div>
+            <br>
+            <div>
+                <label for="answer">Fahrenheit Result:</label>
+                <input type="text" id="answer">
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>
