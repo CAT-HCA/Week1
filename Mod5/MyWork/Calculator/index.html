@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <title>Calculator</title>
+    <script src="scripts/calculator.js"></script>
+    <script>
+        /*PUT FUNCTION HERE*/
+        var num1Field, num2Field, answerField;
+        window.onload = function () {
+            num1Field = document.getElementById("inputNum1");
+            num2Field = document.getElementById("inputNum2");
+            answerField = document.getElementById("answer");
+
+            let addBtn = document.getElementById("addBtn");
+            addBtn.onclick = addNums;
+            let subBtn = document.getElementById("subBtn");
+            subBtn.onclick = subtractNums;
+            let multBtn = document.getElementById("multBtn");
+            multBtn.onclick = multiplyNums;
+            let divBtn = document.getElementById("divBtn");
+            divBtn.onclick = divideNums;
+        }
+    </script>
+</head>
+
+<body>
+    <main>
+        <form id="calcForm" action="#" method="GET">
+            <div>
+                <label for="inputNum1">Number 1:</label>
+                <input type="text" id="inputNum1" required>
+            </div>
+            <div>
+                <label for="inputNum2">Number 2:</label>
+                <input type="text" id="inputNum2" required>
+            </div>
+            <br>
+            <div>
+                <input type="button" id="addBtn" value="Add" />
+                <input type="button" id="subBtn" value="Subtract" />
+                <input type="button" id="multBtn" value="Multiply" />
+                <input type="button" id="divBtn" value="Divide" />
+            </div>
+            <br>
+            <div>
+                <label for="answer">Answer:</label>
+                <input type="text" id="answer">
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>
