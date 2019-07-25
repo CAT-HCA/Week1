@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Say Hello</title>
+        <script src="scripts/greetings.js"></script>
+        <script>
+            /*
+            function init()
+            {
+                const btn = document.getElementById("greetBtn");
+                btn.onclick = greetUser;
+            }
+            window.onload = init; 
+            */
+            window.onload = function()
+            {
+                const btn = document.getElementById("greetBtn");
+                btn.onclick = greetUser;
+            }
+        </script>
+    </head>
+    <body>
+        <p>Enter name: <input type="text" id="name" /></p>
+        <input type="button" id="greetBtn" value="Greet the User" />
+    </body>
+</html>
