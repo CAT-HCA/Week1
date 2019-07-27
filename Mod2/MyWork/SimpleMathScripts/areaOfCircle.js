@@ -1,6 +1,12 @@
+// Description: This script calculates the area of a circle with input of the radius
+//Author: Corinne Trudeau
 "use strict";
 
-var radius = 2;
+//User Input
+var radius = 19;
+
+//Calculations
 var circleArea = Math.PI * Math.pow(radius,2);
 
-console.log("The area of a circle with radius " + radius + " is " + circleArea);
+//Output
+console.log("The area of a circle with a radius of " + radius + " is " + circleArea);
