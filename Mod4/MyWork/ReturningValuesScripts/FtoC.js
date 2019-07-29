@@ -1,9 +1,8 @@
-// Description: 
-//
+// Description:  This function will convert temperature in Fahrenheit to Celsius
 //Author: Corinne Trudeau
 "use strict";
 
-//convertFtoC function will convert temperature in Fahrenheit to Celsius
+//convertFtoC
 function convertFtoC(fTemp)
 {
     var cTemp = (fTemp -32)/1.8;

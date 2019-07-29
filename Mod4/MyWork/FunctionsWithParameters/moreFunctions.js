@@ -1,5 +1,4 @@
-// Description: using functions with parameters
-//
+// Description: This script will be using functions with parameters to return a mailing address label
 //Author: Corinne Trudeau
 "use strict";
 
@@ -11,7 +10,7 @@ function displayMailingLabel(name,address,city,state,zip)
 }
 //User Input
 var myName = "Cori Ader";
-var myAddress = "465 Stafford Ave";
+var myAddress = "123 Main Street";
 var myCity = "Bristol";
 var myState = "CT";
 var myZip = "06010";

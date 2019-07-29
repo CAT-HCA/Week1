@@ -1,5 +1,4 @@
-// Description: convertCtoF function will convert temperature in Fahrenheit to Celsius
-//
+// Description: This function will convert temperature in Fahrenheit to Celsius
 //Author: Corinne Trudeau
 "use strict";
 
@@ -17,3 +16,5 @@ var currentTemp = -40;
 var FahrenheitTemp = convertCtoF(currentTemp);
 //output
 console.log(FahrenheitTemp);
+
+

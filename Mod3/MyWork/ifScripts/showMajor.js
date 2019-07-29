@@ -5,7 +5,7 @@
 "use strict";
 //User input
 var studentName = "Scout";
-var studentMajor = "PSY";
+var studentMajor = "MKT";
 //calculations
 var nameMajor;
 var advLocation;

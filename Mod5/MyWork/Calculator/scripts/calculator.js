@@ -1,8 +1,6 @@
-// Description: 
-//
+// Description: This calculator can be used to add, subtract, multiply, or divide 2 numbers.
 //Author: Corinne Trudeau
 "use strict";
-
 
 function addNums()
 {

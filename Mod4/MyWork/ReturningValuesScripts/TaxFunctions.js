@@ -1,5 +1,4 @@
-// Description: calculating taxes owed using functions
-//
+// Description: Calculating payroll taxes using functions
 //Author: Corinne Trudeau
 "use strict";
 
